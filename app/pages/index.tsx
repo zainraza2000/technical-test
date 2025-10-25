@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { JobHistoryRecord } from '../../shared/types';
+import { JobHistoryRecord } from '@/shared/types';
 
 export default function Dashboard() {
   const [isLoading, setIsLoading] = useState(false);

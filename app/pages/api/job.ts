@@ -1,8 +1,8 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import { enqueueWeatherJob } from '../../lib/redis';
-import { STANDARD_CITIES } from '../../../shared/constants';
-import { insertJobHistory } from 'app/lib/database';
-import { JobHistoryRecord } from 'shared/types';
+import { enqueueWeatherJob } from '@/lib/redis';
+import { STANDARD_CITIES } from '@/shared/constants';
+import { insertJobHistory } from '@/lib/database';
+import { JobHistoryRecord } from '@/shared/types';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method !== 'POST') {

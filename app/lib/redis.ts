@@ -1,5 +1,5 @@
 import { createClient } from 'redis';
-import { WeatherJobPayload } from '../../shared/types';
+import { WeatherJobPayload } from '@/shared/types';
 
 let redis: any = null;
 let isConnected = false;

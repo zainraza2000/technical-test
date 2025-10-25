@@ -1,0 +1,5 @@
+# nodejs gitignore
+node_modules
+.env
+.next
+.env.local

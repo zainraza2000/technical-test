@@ -1,0 +1,19 @@
+{
+  "name": "weather-producer",
+  "version": "1.0.0",
+  "description": "Weather job producer service",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/producer/src/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "redis": "^4.6.10"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.0"
+  }
+}
